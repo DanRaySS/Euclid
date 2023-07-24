@@ -1,0 +1,24 @@
+// Base
+
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+@import './base/sprite';
+@import './base/mixins';
+
+
+//Blocks
+
+@import './blocks/header';
+@import './blocks/nav';
+@import './blocks/nav-icon';
+@import './blocks/search';
+@import './blocks/about';
+@import './blocks/photo';
+@import './blocks/card';
+@import './blocks/stages';
+@import './blocks/questions';
+@import './blocks/footer';
+@import './blocks/socials';
+@import './blocks/cta';
+@import './blocks/form';

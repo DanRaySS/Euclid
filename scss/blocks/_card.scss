@@ -1,0 +1,146 @@
+.card {
+    display: flex;
+
+    @media (max-width:1770px) {
+        flex-direction: column;
+    }
+
+    @media (max-width:1200px) {
+        flex-direction: row;
+    }
+
+    @media (max-width:767px) {
+        flex-direction: column;
+    }
+}
+
+.card__photo {
+    margin-right: 50px;
+    width: 190px;
+    height: 165px;
+
+    @media (max-width:1770px) {
+        margin-bottom: 35px;
+    }
+
+    @media (max-width:1350px) {
+        width: 114px;
+        height: 99px;
+        margin-bottom: 15px;
+    }
+
+    @media (max-width:1200px) {
+        width: 190px;
+        height: 165px;
+    }
+
+    @media (max-width:1060px) {
+        margin-left: -1px;
+    }
+
+    @media (max-width:1020px) {
+        width: 114px;
+        height: 99px;
+    }
+
+    @media (max-width:800px) {
+        margin: auto 16px auto -1px;
+    }
+
+    @media (max-width:767px) {
+        width: 64px;
+        height: 49px;
+        margin-bottom: 12px;
+    }
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__title {
+    max-width: 412px;
+    width: 100%;
+    font-size: 24px;
+    font-family: $font-main;
+    font-weight: 700;
+    margin-bottom: 9px;
+    margin-top: -2px;
+
+    &-w452 {
+        max-width: 452px;
+        font-size: 24px;
+        font-family: $font-main;
+        font-weight: 700;
+        margin-bottom: 9px;
+        margin-top: -2px;
+
+        @media (max-width:1500px) {
+            max-width: 300px;
+        }
+
+        @media (max-width:1200px) {
+            max-width: 100%;
+        }
+
+        @media (max-width:1060px) {
+            margin-top: -1px;
+            width: 452px;
+        }
+
+        @media (max-width:767px) {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        @media (max-width:767px) {
+            width: 290px;
+        }
+    }
+
+    @media (max-width:1500px) {
+        max-width: 300px;
+    }
+
+    @media (max-width:1200px) {
+        max-width: 100%;
+    }
+
+    @media (max-width:1024px) {
+        margin-top: -1px;
+    }
+
+    @media (max-width:767px) {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    @media (max-width:767px) {
+        width: 290px;
+    }
+}
+
+.card__text {
+    @media (max-width:1500px) {
+        max-width: 400px;
+    }
+
+    @media (max-width:1350px) {
+        max-width: 250px;
+    }
+
+    @media (max-width:1200px) {
+        max-width: 450px;
+    }
+
+    @media (max-width:767px) {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    @media (max-width:767px) {
+        max-width: 290px;
+    }
+}

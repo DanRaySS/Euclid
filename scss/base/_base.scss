@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --gap: 32px;
+}
+
+body {
+    font-family: $font-main;
+    background-color: $white;
+    color: $black;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+a {
+    color: $black;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+    padding: 0 75px;
+
+    @media (max-width:1060px) {
+        padding: 0 50px;
+    }
+
+    @media (max-width:1020px) {
+        max-width: 768px;
+    }
+
+    @media (max-width:767px) {
+        padding: 0 30px;
+        max-width: 600px;
+    }
+
+    @media (max-width:480px) {
+        padding: 0 15px;
+        max-width: 320px;
+    }
+}
+
+.title {
+    font-size: 48px;
+    font-family: $font-main;
+    margin-bottom: 34px;
+
+    @media (max-width:1060px) {
+        margin-bottom: 33px;
+    }
+
+    @media (max-width:767px) {
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+
+.title-h3 {
+    font-size: 24px;
+    font-family: $font-main;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 8px;
+
+    @media (max-width:767px) {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 32px;
+    }
+}
+
+.text {
+    font-size: 16px;
+    font-family: $font-main;
+    line-height: 32px;
+    font-style: normal;
+    overflow-y: hidden;
+
+    &-white-solid {
+        font-style: normal;
+        font-size: 16px;
+        font-family: $font-main;
+        line-height: 32px;
+        font-weight: 700;
+        overflow-y: hidden;
+        color: $white;
+    }
+}
+
+.btn {
+    color: $white;
+    text-align: center;
+    font-size: 16px;
+    font-family: $font-main;
+    font-weight: 700;
+    padding: 19px 38px;
+    border-radius: 16px;
+    height: 60px;
+    transition: all 0.2s ease-in;
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}
+
+//Placeholder
+
+input[type=checkbox] {
+    -moz-appearance: initial; // Hack for Firefox Browsers
+}
+
+input[type='checkbox']:after {
+    content: '';
+    left: -3px;
+    top: -1px;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background-color: $black;
+    visibility: visible;
+    outline: 1px solid $light-gray;
+}
+
+input[type='checkbox']:checked:after {
+    content: '';
+    display: block;
+    left: -3px;
+    top: -1px;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background-image: url('./../img/footer/check.svg');
+    background-size: 100% 100%;
+    background-position: 1px 2px;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    visibility: visible;
+    outline: 1px solid $light-gray;
+}
+
+:focus::-webkit-input-placeholder,
+:focus::-moz-placeholder,
+:focus:-moz-placeholder,
+:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+input::-webkit-input-placeholder,
+input::-moz-placehold,
+input:-moz-placeholder,
+input:-ms-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+input:focus::-webkit-input-placeholder,
+input:focus::-moz-placeholder,
+input:focus:-moz-placeholder,
+input:focus:-ms-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+:focus::placeholder {
+    opacity: 0;
+}
