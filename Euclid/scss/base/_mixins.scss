@@ -1,0 +1,5 @@
+@mixin mediaTablet {
+    @media (max-width:$tablet) {
+        @content;
+    }
+}
