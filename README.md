@@ -2,4 +2,4 @@
 
 [Ссылка](https://danrayss.github.io/Euclid/) на деплой через github pages <br>
 
-![Демонстрация вёрстки](https://i.postimg.cc/tgdCv5PT/image.png "Демо вёрстки")
+![Демонстрация вёрстки](https://i.postimg.cc/tgdCv5PT/image.png "Демонстрация вёрстки")
